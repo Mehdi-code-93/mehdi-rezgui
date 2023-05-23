@@ -3,10 +3,10 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: blue;
+	background-color: #fff;
 }
 h1{
-	color: black;
+	color: red;
 }
 h3{
 	color: red;
