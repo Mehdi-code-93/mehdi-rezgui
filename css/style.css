@@ -325,6 +325,10 @@ main{
 .reseau{
     width: 45px;
 }
+.reseau:hover{
+    background-color: #e1e1e1;
+    border-radius: 4px;
+}
 
 
 #boutton{
@@ -485,7 +489,7 @@ main{
 
 .section2{
     background-color: #f9f9f9;
-    height: 600px;
+    height: 700px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -495,6 +499,10 @@ main{
     transition: 1s;
 }
 .blokAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     background-color: white;
     box-shadow: 0px 0px 20px rgb(238, 238, 238);
     border-radius: 30px;
@@ -515,17 +523,14 @@ main{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin-top: 5%;
     border: none;
     background-color: #83bb9d;
     border-radius: 5px;
-    color: #000000;
+    color: black;
     width: 25%;
     height: 40px;
     font-size: 20px;
     box-shadow: 4px 4px 0px #000000;
-    /* box-shadow: 2px 2px 6px #5b5b5b inset; */
-
     transition: 0.3s;
 }
 #btn-cv:hover{
