@@ -1,5 +1,6 @@
 let body = document.getElementsByTagName('body');
 let header = document.getElementsByTagName('nav');
+let form = document.getElementsByTagName('form');
 let btnTheme = document.getElementsByClassName('btnTheme');
 let iconTheme = document.getElementsByClassName('iconTheme');
 let title = document.getElementsByClassName('title');
@@ -7,7 +8,6 @@ let li = document.getElementsByClassName('li');
 let liC = document.getElementById('liC');
 let reseau = document.getElementsByClassName('reseau');
 let fleche = document.getElementsByClassName('fleche');
-let boutton = document.getElementById('boutton');
 let section1 = document.getElementsByClassName('section1');
 let section2 = document.getElementsByClassName('section2');
 let section3 = document.getElementsByClassName('section3');
@@ -19,6 +19,8 @@ let textBlue = document.getElementsByClassName('textBlue');
 let navbarScroll = document.getElementsByClassName('navbar-scroll');
 let input = document.getElementsByClassName('input');
 let competence = document.getElementsByClassName('competence');
+let secs = document.getElementsByClassName('secs');
+let blokAbout = document.getElementsByClassName('blokAbout');
 
 let count = 0;
 
@@ -73,17 +75,26 @@ btnTheme[0].onclick = function start() {
         section2[0].style.color = 'black';
         for (let i = 0; i < boxProjet.length; i++) {
             boxProjet[i].style.backgroundColor = '#181818';
+            boxProjet[i].style.boxShadow = '0px 0px 10px #575757';
         }
-        boutton.style.boxShadow = '7px 7px 0px #34423a';
         for (let i = 0; i < input.length; i++) {
-            input[i].style.backgroundColor = '#181818';
+            input[i].style.backgroundColor = 'rgb(24 24 24 / 0%)';
             input[i].style.borderBottom = '1px solid white';
             input[i].style.color = 'white';
             input[i].style.transition = '0.5s';
         }
         for (let i = 0; i < competence.length; i++) {
             competence[i].style.backgroundColor = '#181818';
+            competence[i].style.boxShadow = '0px 0px 10px #575757';
         }
+        for (let i = 0; i < secs.length; i++) {
+            secs[i].style.backgroundColor = '#151515';
+        }
+        blokAbout[0].style.backgroundColor = '#151515';
+        blokAbout[0].style.boxShadow = '0px 0px 10px #575757';
+        blokAbout[0].style.color = 'white';
+        form[0].style.backgroundColor = '#151515';
+        form[0].style.boxShadow = '0px 0px 10px #575757';
 
         count = 1;
 
@@ -109,9 +120,8 @@ btnTheme[0].onclick = function start() {
         }
         section1[0].style.backgroundImage = 'linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./asset/paysage14.jpg)';
         section2[0].style.color = '#fff';
-        boutton.style.boxShadow = '7px 7px 0px #000000';
         for (let i = 0; i < input.length; i++) {
-            input[i].style.backgroundColor = 'white';
+            input[i].style.backgroundColor = 'rgb(24 24 24 / 0%)';
             input[i].style.borderBottom = '1px solid black';
             input[i].style.color = 'black';
             input[i].style.transition = '0.5s';
@@ -119,6 +129,14 @@ btnTheme[0].onclick = function start() {
         for (let i = 0; i < competence.length; i++) {
             competence[i].style.backgroundColor = 'rgba(255, 255, 255, 0)';
         }
+        for (let i = 0; i < secs.length; i++) {
+            secs[i].style.backgroundColor = '#f9f9f9';
+        }
+        blokAbout[0].style.backgroundColor = 'white';
+        blokAbout[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
+        blokAbout[0].style.color = 'black';
+        form[0].style.backgroundColor = 'white';
+        form[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
 
         count = 0;
     }
