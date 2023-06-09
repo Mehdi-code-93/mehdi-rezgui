@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <title>Document</title>
+    <link rel="icon" href="asset/myPhoto.png">
+    <title>MehdiFolio</title>
 </head>
 <body>
+    <div id="loading-overlay">
+        <h1 class="text-load">Mehdi.R</h1>
+        <div class="chargement"></div>
+     </div>
 
     <!-- ============== le header ============== -->
     <header id="myNavbar">
@@ -16,6 +21,7 @@
             <div class="themeLogo">
                <a class="title" href="#"><h1>MehdiFolio</h1></a>
             </div>
+            <div class="burger"></div>
            <ul>
             <a class="li li-home" href="#"><li>Home</li></a>
             <a class="li" href="#"><li>About</li></a>
@@ -39,19 +45,19 @@
         <div class="section1">
             <div class="Accueil-et-myPhoto">
                 <div class="blokAccueil">
-                    <h3 class="hello animeTxt-6">Hello, it's Me</h3>
+                    <h3 class="hello animeTxt-6">Hello, moi c'est</h3>
                     <h2 class="myName animeTxt-5">Mehdi Rezgui</h2>
                     <div class="blackBlue animeTxt-4">
-                        <h3 class="iam">And i am a</h3>
-                        <h3 class="textBlue">web developper</h3>
+                        <h3 class="iam">Et je suis <span class="textBlue">Développeur web</span></h3>
                     </div>
-                    <p class="desc animeTxt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                    <p class="desc animeTxt-3">Clique sur les deux petite fleche pour parcourir mon portfolio et découvrir mes différents projets</p>
                     <div class="divIcon animeTxt-2">
                         <img class="reseau" src="./asset/linkedin.png" alt="">
                         <img class="reseau" src="./asset/github.png" alt="">
                         <img class="reseau" src="./asset/twitter.png" alt="">
                     </div>
-                    <button id="boutton" class="animeTxt-1">Download CV</button>
+                    <a id="boutton" class="animeTxt-1" href="./asset/CV-Epitech-Mehdi.pdf" download="CV-Epitech-Mehdi.pdf" target="_blank">Télécharger CV</a>
+                    <!-- <button id="boutton" class="animeTxt-1">Download CV</button> -->
                     <div class="blokFleche">
                         <a class="blokFleche" href="#sec2" id=""><img class="fleche" src="./asset/fleche.png" alt=""></a>
                     </div>
@@ -68,11 +74,7 @@
         <div class="section2 reveal" id="sec2">
             <img class="myPicture2" src="./asset/myPicture6.png" alt="">
             <div class="blokAbout">
-                <h2 class="myName">About ME</h2>
-                <div class="blackBlue">
-                    <h3 class="iam">And i am a</h3>
-                    <h3 class="textBlue">Web developer</h3>
-                </div>
+                <h2 class="myName textBlue">A propos de moi</h2>
                 <p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
             </div>
         </div>
@@ -195,18 +197,42 @@
             </div>
 
             <div class="section-Projet-sec4">
-                <div class="competence c reveal-left"></div>
-                <div class="competence js reveal-left"></div>
-                <div class="competence react reveal-left"></div>
-                <div class="competence php reveal-left"></div>
-                <div class="competence symfony reveal"></div>
-                <div class="competence laravel reveal"></div>
-                <div class="competence html reveal"></div>
-                <div class="competence css reveal"></div>
-                <div class="competence arduino reveal-left"></div>
-                <div class="competence sql reveal-left"></div>
-                <div class="competence git reveal-left"></div>
-                <div class="competence bash reveal-left"></div>
+                <div class="competence c reveal-left">
+                    <h1 class="title-competence">C</h1>
+                </div>
+                <div class="competence js reveal-left">
+                    <h1 class="title-competence">Javascript</h1>
+                </div>
+                <div class="competence react reveal-left">
+                    <h1 class="title-competence">React JS</h1>
+                </div>
+                <div class="competence php reveal-left">
+                    <h1 class="title-competence">PHP</h1>
+                </div>
+                <div class="competence symfony reveal">
+                    <h1 class="title-competence">Symfony</h1>
+                </div>
+                <div class="competence laravel reveal">
+                    <h1 class="title-competence">Laravel</h1>
+                </div>
+                <div class="competence html reveal">
+                    <h1 class="title-competence">HTML</h1>
+                </div>
+                <div class="competence css reveal">
+                    <h1 class="title-competence">CSS</h1>
+                </div>
+                <div class="competence arduino reveal-left">
+                    <h1 class="title-competence">Arduino</h1>
+                </div>
+                <div class="competence sql reveal-left">
+                    <h1 class="title-competence">SQL</h1>
+                </div>
+                <div class="competence git reveal-left">
+                    <h1 class="title-competence">GIT</h1>
+                </div>
+                <div class="competence bash reveal-left">
+                    <h1 class="title-competence">Bash</h1>
+                </div>
             </div>
         </div>
 

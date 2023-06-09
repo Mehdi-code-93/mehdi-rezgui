@@ -18,6 +18,7 @@ let imgProjet = document.getElementsByClassName('imgProjet');
 let textBlue = document.getElementsByClassName('textBlue');
 let navbarScroll = document.getElementsByClassName('navbar-scroll');
 let input = document.getElementsByClassName('input');
+let competence = document.getElementsByClassName('competence');
 
 let count = 0;
 
@@ -80,6 +81,9 @@ btnTheme[0].onclick = function start() {
             input[i].style.color = 'white';
             input[i].style.transition = '0.5s';
         }
+        for (let i = 0; i < competence.length; i++) {
+            competence[i].style.backgroundColor = '#181818';
+        }
 
         count = 1;
 
@@ -111,6 +115,9 @@ btnTheme[0].onclick = function start() {
             input[i].style.borderBottom = '1px solid black';
             input[i].style.color = 'black';
             input[i].style.transition = '0.5s';
+        }
+        for (let i = 0; i < competence.length; i++) {
+            competence[i].style.backgroundColor = 'rgba(255, 255, 255, 0)';
         }
 
         count = 0;
@@ -186,3 +193,30 @@ document.querySelectorAll('[class*="animeTxt-"]').forEach(function (r){
     observer2.observe(r)
 })
 // console.log(observer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var lo = document.getElementById('loading-overlay');
+    function loadingOverlay() {
+        lo.addEventListener('animationend', () => {
+            lo.style.display = "none";
+            document.querySelector('body').style.overflowY = "scroll";
+            document.querySelector("header ul").style.opacity = "1";
+
+        });
+    }
+    loadingOverlay();
