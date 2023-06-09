@@ -2,7 +2,6 @@
     user-select: none;
     position: fixed;
     background-color: #737373;
-    /* background-color: white; */
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -250,15 +249,12 @@ main{
 
 /* === section1 === */
 .section1{
-    /* background-color: rgb(255, 255, 255); */
     padding-top: 100px;
-    margin-bottom: 5%;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../asset/paysage6.jpg); */
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../asset/paysage14.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -344,11 +340,11 @@ main{
     width: 45%;
     height: 50px;
     font-size: 20px;
-    box-shadow: 7px 7px 0px #000000;
-    transition: 0.5s;
+    box-shadow: 4px 4px 0px #000000;
+    transition: 0.3s;
 }
 #boutton:hover{
-    transform: scale(1.10);
+    transform: scale(1.02);
     box-shadow: none;
 }
 [class*="animeTxt-"]{
@@ -488,19 +484,53 @@ main{
 /* === section2 === */
 
 .section2{
-    color: #fff;
-    background-image: url(../asset/banniere2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 90%;
-    padding-top: 6%;
+    background-color: #f9f9f9;
+    height: 600px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5%;
     transition: 1s;
+}
+.blokAbout{
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(238, 238, 238);
+    border-radius: 30px;
+    width: 80%;
+    height: 50%;
+    padding: 40px;
+
+}
+.about-title{
+    font-size: 30px;
+}
+.desc-about{
+    font-size: 16px;
+    line-height: 16px;
+}
+#btn-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 5%;
+    border: none;
+    background-color: #83bb9d;
+    border-radius: 5px;
+    color: #000000;
+    width: 25%;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 4px 4px 0px #000000;
+    /* box-shadow: 2px 2px 6px #5b5b5b inset; */
+
+    transition: 0.3s;
+}
+#btn-cv:hover{
+    transform: scale(1.01);
+    box-shadow: none;
 }
 
 .reveal {
@@ -529,11 +559,7 @@ main{
     position: relative;
     bottom: 32px;
 }
-.blokAbout{
-    width: 39%;
-    position: relative;
-    bottom: 32px;
-}
+
 
 
 
@@ -562,7 +588,6 @@ main{
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 5%;
     padding-bottom: 5%;
 }
 .sectionProjet{
@@ -760,7 +785,7 @@ h6{
 }
 .section-Projet-sec4{
     margin-top: 10%;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -936,6 +961,31 @@ footer{
 
 
 /* ============== footer ============== */
+@media (max-width: 1800px) {
+
+    .competence{
+        width: 270px;
+        height: 270px;
+    }
+}
+@media (min-width: 1600px) {
+    .section-Projet-sec4{
+        width: 80%;
+    }
+    .competence{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (min-width: 1500px) {
+    .section-Projet-sec4{
+        width: 80%;
+    }
+    .competence{
+        width: 250px;
+        height: 250px;
+    }
+}
 @media (max-width: 1300px) {
     .myName{
         font-size: 50px;
@@ -947,6 +997,13 @@ footer{
     }
     .myName{
         font-size: 45px;
+    }
+    .section-Projet-sec4{
+        width: 80%;
+    }
+    .competence{
+        width: 200px;
+        height: 200px;
     }
 }
 @media (max-width: 1100px) {
@@ -1001,6 +1058,13 @@ footer{
         height: 500px;
         width: 40%;
     }
+    .section-Projet-sec4{
+        width: 90%;
+    }
+    .competence{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 
@@ -1012,6 +1076,15 @@ footer{
 
 
 @media (max-width: 700px) {
+    .chargement{
+        height: 150px;
+        width: 150px;
+    }
+
+    .text-load {
+        font-size: 2.5em;
+      }
+
     .burger{
         display: block;
     }
@@ -1019,8 +1092,6 @@ footer{
         display: none;
     }
     .section1{
-        padding-top: 100px;
-        margin-bottom: 5%;
         height: 90vh;
         width: 100%;
         display: flex;
@@ -1089,20 +1160,71 @@ footer{
         font-size: 10px;
     }
     .section-Projet-sec4{
-        width: 85%;
+        width: 95%;
     }
-    /* .boxProjet{
-        height: 220px;
-        width: 55%;
+    .competence{
+        width: 150px;
+        height: 150px;
     }
-    h2{
+    .blokAbout {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-title {
+        text-align: center;
+        font-size: 11px;
+        width: 80%;
+    }
+    .desc-about {
+        font-size: 9px;
+        text-align: center;
+    }
+    #btn-cv {
+        width: 50%;
+        height: 25px;
+        font-size: 10px;
+    }
+
+
+@media (max-width: 700px) {
+    .section-Projet-sec4{
+        width: 95%;
+    }
+    .competence{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+
+}
+@media (max-width: 450px) {
+    .myName{
         font-size: 20px;
     }
-    .paragraphe-projet{
-        font-size: 12px;
+    .about-title{
+        font-size: 11px;
+        width: 80%;
     }
-    form{
-        height: 500px;
-        width: 40%;
-    } */
+    .desc-about{
+        font-size: 9px;
+    }
+    .Accueil-et-myPhoto{
+        gap: 2%;
+    }
+    .iam{
+        font-size: 18px;
+    }
+    .desc {
+        font-size: 13px;
+        text-align: center;
+    }
+    #boutton{
+        width: 50%;
+        height: 40px;
+    }
 }
