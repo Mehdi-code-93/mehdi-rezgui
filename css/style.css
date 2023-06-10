@@ -96,15 +96,9 @@ header{
     height: 70px;
     position: fixed;
     transition: 500ms;
+    backdrop-filter: blur(20px);
 }
-.navbar-scroll {
-    background-color: #ffffff; /* Couleur de la navbar lors du scroll */
-    /* Ajoutez ici d'autres styles pour la navbar lors du scroll */
-  }
-.navbar-scroll2 {
-    background-color: #000000; /* Couleur de la navbar lors du scroll */
-    /* Ajoutez ici d'autres styles pour la navbar lors du scroll */
-}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -117,13 +111,42 @@ nav{
 
 
 
+/* menu-burger */
 
 .burger{
     display: none;
-    width: 50px;
-    height: 50px;
-    background-color: #3d7153;
+    width: 35px;
+    height: 24px;
+    padding: 5px;
 }
+.barre-burger{
+    background-color: black;
+    margin: -1.5px;
+    height: 15%;
+    width: 100%;
+    border-radius: 20px;
+    transition: 1s;
+}
+/* .barre-burger:hover{
+    rotate: 10deg;
+} */
+
+/* sous-menu */
+.menu-burger{
+    display: none;
+}
+.ul-burger{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 10%;
+    padding: 0px;
+    font-size: 24px;
+}
+
+
 
 
 
@@ -174,7 +197,7 @@ nav{
 }
 
 
-ul{
+.ul{
     list-style: none;
     width: 22%;
     height: 100%;
@@ -992,12 +1015,16 @@ footer{
     }
 }
 @media (max-width: 1300px) {
+    .ul {
+        width: 25%;
+        font-size: 13px;
+    }
     .myName{
         font-size: 50px;
     }
 }
 @media (max-width: 1150px) {
-    ul {
+    .ul {
       font-size: 15px;
     }
     .myName{
@@ -1012,8 +1039,9 @@ footer{
     }
 }
 @media (max-width: 1100px) {
-    ul {
-      font-size: 13px;
+    .ul {
+        width: 30%;
+        font-size: 13px;
     }
     .btnTheme{
         height: 16px;
@@ -1027,7 +1055,7 @@ footer{
     }
 }
 @media (max-width: 1000px) {
-    ul {
+    .ul {
       font-size: 12px;
     }
     .hello{
@@ -1054,10 +1082,10 @@ footer{
         width: 55%;
     }
     h2{
-        font-size: 20px;
+        font-size: 26px;
     }
     .paragraphe-projet{
-        font-size: 12px;
+        font-size: 18px;
     }
     form{
         height: 500px;
@@ -1081,6 +1109,12 @@ footer{
 
 
 @media (max-width: 700px) {
+    header{
+        height: 50px;
+    }
+    nav{
+        height: 50px;
+    }
     .chargement{
         height: 150px;
         width: 150px;
@@ -1091,9 +1125,12 @@ footer{
       }
 
     .burger{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
-    ul{
+    .ul{
         display: none;
     }
     .section1{
@@ -1130,10 +1167,11 @@ footer{
         width: 100%;
     }
     .myName {
-        font-size: 14px;
+        font-size: 22px;
     }
     .desc {
-        font-size: 9px;
+        text-align: center;
+        font-size: 16px;
     }
     .myPicture2 {
         width: 30%;
@@ -1145,6 +1183,10 @@ footer{
         position: relative;
         bottom: 15px;
     }
+    .btnTheme {
+        width: 65%;
+        height: 25px;
+    }
 
 
     form {
@@ -1152,10 +1194,10 @@ footer{
         width: 60%;
     }
     h2{
-        font-size: 13px;
+        font-size: 22px;
     }
     .paragraphe-projet{
-        font-size: 8px;
+        font-size: 14px;
     }
     .boxProjet {
         height: 150px;
@@ -1184,17 +1226,21 @@ footer{
         width: 80%;
     }
     .desc-about {
-        font-size: 9px;
+        font-size: 14px;
         text-align: center;
     }
+    .about-title {
+        text-align: center;
+        font-size: 22px;
+        width: 80%;
+    }
     #btn-cv {
-        width: 50%;
-        height: 25px;
-        font-size: 10px;
+        width: 55%;
+        height: 32px;
+        font-size: 16px;
     }
 
 
-@media (max-width: 700px) {
     .section-Projet-sec4{
         width: 95%;
     }
@@ -1206,7 +1252,10 @@ footer{
 
 
 
-}
+
+
+
+
 @media (max-width: 450px) {
     .myName{
         font-size: 20px;
@@ -1215,9 +1264,6 @@ footer{
         font-size: 11px;
         width: 80%;
     }
-    .desc-about{
-        font-size: 9px;
-    }
     .Accueil-et-myPhoto{
         gap: 2%;
     }
@@ -1225,7 +1271,7 @@ footer{
         font-size: 18px;
     }
     .desc {
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
     }
     #boutton{

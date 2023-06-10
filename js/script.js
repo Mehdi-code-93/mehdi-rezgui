@@ -1,5 +1,6 @@
 let body = document.getElementsByTagName('body');
-let header = document.getElementsByTagName('nav');
+let nav = document.getElementsByTagName('nav');
+// let header = document.getElementsByTagName('header');
 let form = document.getElementsByTagName('form');
 let btnTheme = document.getElementsByClassName('btnTheme');
 let iconTheme = document.getElementsByClassName('iconTheme');
@@ -21,42 +22,62 @@ let input = document.getElementsByClassName('input');
 let competence = document.getElementsByClassName('competence');
 let secs = document.getElementsByClassName('secs');
 let blokAbout = document.getElementsByClassName('blokAbout');
+let burger = document.getElementsByClassName('burger');
+let menuBurger = document.getElementsByClassName('menu-burger');
+let headerBurger = document.getElementsByClassName('header-burger');
+let barreBurger = document.getElementsByClassName('barre-burger');
 
 let count = 0;
+let nbBurger = 0;
 
 
 
 
 
 
-window.onscroll = function() { changerCouleurNavbar() };
 
-function changerCouleurNavbar() {
-  var navbar = document.getElementById("myNavbar");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    if (count === 0) {
-        
-        navbar.classList.add("navbar-scroll");
+
+
+burger[0].onclick = function funcBurger() {
+    if (nbBurger == 0) {
+        burger[0].style.justifyContent = 'center';
+        barreBurger[0].style.transform = 'rotate(45deg)';
+        barreBurger[1].style.display = 'none';
+        barreBurger[2].style.transform = 'rotate(-45deg)';
+        headerBurger[0].style.height = '100vh';
+        menuBurger[0].style.display = 'flex';
+        menuBurger[0].style.justifyContent = 'center';
+        menuBurger[0].style.alignItems = 'center';
+        menuBurger[0].style.height = '90%';
+        nbBurger = 1;
     }
     else{
-        navbar.classList.add("navbar-scroll2");
+        burger[0].style.justifyContent = 'space-between';
+        barreBurger[0].style.transform = 'rotate(180deg)';
+        barreBurger[1].style.display = 'block';
+        barreBurger[2].style.transform = 'rotate(-180deg)';
+        headerBurger[0].style.height = '50px';
+        menuBurger[0].style.display = 'none';
+        nbBurger = 0;
     }
-  } else {
-    navbar.classList.remove("navbar-scroll");
-    navbar.classList.remove("navbar-scroll2");
-  }
 }
 
 
 
 
-btnTheme[0].onclick = function start() {
-  var navbar = document.getElementById("myNavbar");
+
+
+
+
+for (let i = 0; i < btnTheme.length; i++) {
+
+btnTheme[i].onclick = function start() {
     
     if (count == 0) {
-        navbar.classList.add("navbar-scroll2");
-        navbar.classList.remove("navbar-scroll");
-        
+
+        for (let i = 0; i < barreBurger.length; i++) {
+            barreBurger[i].style.backgroundColor = 'white';
+        }
         reseau[0].src = './asset/linkedin2.png';
         reseau[1].src = './asset/github2.png';
         reseau[2].src = './asset/twitter2.png';
@@ -100,9 +121,10 @@ btnTheme[0].onclick = function start() {
 
     }
     else{
-        navbar.classList.remove("navbar-scroll2");
-        navbar.classList.add("navbar-scroll");
-        
+
+        for (let i = 0; i < barreBurger.length; i++) {
+            barreBurger[i].style.backgroundColor = 'black';
+        }
         reseau[0].src = './asset/linkedin.png';
         reseau[1].src = './asset/github.png';
         reseau[2].src = './asset/twitter.png';
@@ -141,6 +163,40 @@ btnTheme[0].onclick = function start() {
         count = 0;
     }
 }
+}
+
+
+
+
+
+
+
+// window.onscroll = function() { changerCouleurNavbar() };
+
+// function changerCouleurNavbar() {
+//   var navbar = document.getElementById("myNavbar");
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     if (count === 0) {
+        
+//         navbar.classList.add("navbar-scroll");
+//     }
+//     else{
+//         navbar.classList.add("navbar-scroll2");
+//     }
+//   } else {
+//     navbar.classList.remove("navbar-scroll");
+//     navbar.classList.remove("navbar-scroll2");
+//   }
+// }
+
+
+
+
+
+
+
+
+
 
 
 

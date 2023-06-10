@@ -15,13 +15,19 @@
      </div>
 
     <!-- ============== le header ============== -->
-    <header id="myNavbar">
+    <header id="myNavbar" class="header-burger">
         <nav>
+            
             <div class="themeLogo">
                <a class="title" href="#"><h1>MehdiFolio</h1></a>
             </div>
-            <div class="burger"></div>
-           <ul>
+                <!-- menu-burger  -->
+            <div class="burger">
+                <div class="barre-burger"></div>
+                <div class="barre-burger" id="barre-burger-hiden"></div>
+                <div class="barre-burger"></div>
+            </div>
+           <ul class="ul">
             <a class="li li-home" href="#home"><li>Home</li></a>
             <a href="#sec2" class="li"><li>About</li></a>
             <a class="li" href="#sec3"><li>Project</li></a>
@@ -32,6 +38,20 @@
             </div>
            </ul>
         </nav>
+
+                         <!-- sous-menu  -->
+                         <div class="menu-burger">
+                            <ul class="ul-burger">
+                                <a class="li li-home" href="#home"><li>Home</li></a>
+                                <a href="#sec2" class="li"><li>About</li></a>
+                                <a class="li" href="#sec3"><li>Project</li></a>
+                                <a id="liC" class="li" href="#contact"><li>Contact</li></a>
+                                <div class="btnTheme">
+                                    <div class="iconTheme"></div>
+                                </div>
+                            </ul>
+                        </div>
+
     </header>
 
 
@@ -45,7 +65,7 @@
             <div class="Accueil-et-myPhoto">
                 <div class="blokAccueil">
                     <h3 class="hello animeTxt-6">Hello, moi c'est</h3>
-                    <h2 class="myName animeTxt-5">Mehdi Rezgui</h2>
+                    <h2 class="hello animeTxt-5">Mehdi Rezgui</h2>
                     <div class="blackBlue animeTxt-4">
                         <h3 class="iam">Et je suis <span class="textBlue">Développeur web</span></h3>
                     </div>
