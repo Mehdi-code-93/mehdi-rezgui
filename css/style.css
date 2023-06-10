@@ -782,6 +782,7 @@ display: flex;
     text-align: start;
 }
 h6{
+    margin: 0px;
     color: rgb(108, 108, 108);
 }
 
@@ -1220,11 +1221,6 @@ footer{
         align-items: center;
         justify-content: space-around;
     }
-    .about-title {
-        text-align: center;
-        font-size: 11px;
-        width: 80%;
-    }
     .desc-about {
         font-size: 14px;
         text-align: center;
@@ -1256,12 +1252,12 @@ footer{
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .myName{
         font-size: 20px;
     }
     .about-title{
-        font-size: 11px;
+        font-size: 18px;
         width: 80%;
     }
     .Accueil-et-myPhoto{
@@ -1277,5 +1273,11 @@ footer{
     #boutton{
         width: 50%;
         height: 40px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .paragraphe-projet{
+        font-size: 10px;
     }
 }
