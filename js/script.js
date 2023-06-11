@@ -179,8 +179,6 @@ btnTheme[i].onclick = function start() {
 
 
 
-
-
 // window.onscroll = function() { changerCouleurNavbar() };
 
 // function changerCouleurNavbar() {
