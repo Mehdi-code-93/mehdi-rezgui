@@ -145,6 +145,7 @@ btnTheme[i].onclick = function start() {
         }
         for (let i = 0; i < boxProjet.length; i++) {
             boxProjet[i].style.backgroundColor = 'white';
+            boxProjet[i].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
         }
         section1[0].style.backgroundImage = 'linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./asset/paysage14.jpg)';
         section2[0].style.color = '#fff';
@@ -155,7 +156,8 @@ btnTheme[i].onclick = function start() {
             input[i].style.transition = '0.5s';
         }
         for (let i = 0; i < competence.length; i++) {
-            competence[i].style.backgroundColor = 'rgba(255, 255, 255, 0)';
+            competence[i].style.backgroundColor = 'white';
+            competence[i].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
         }
         blokAbout[0].style.backgroundColor = 'white';
         blokAbout[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
