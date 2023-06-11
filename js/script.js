@@ -20,7 +20,6 @@ let textBlue = document.getElementsByClassName('textBlue');
 let navbarScroll = document.getElementsByClassName('navbar-scroll');
 let input = document.getElementsByClassName('input');
 let competence = document.getElementsByClassName('competence');
-let secs = document.getElementsByClassName('secs');
 let blokAbout = document.getElementsByClassName('blokAbout');
 let blockHQ = document.getElementsByClassName('block-hq');
 let burger = document.getElementsByClassName('burger');
@@ -76,6 +75,9 @@ btnTheme[i].onclick = function start() {
     
     if (count == 0) {
 
+        body[0].style.transition = '0.5s';
+        body[0].style.backgroundColor = 'rgb(32 32 35)';
+        body[0].style.color = '#fff';
         for (let i = 0; i < barreBurger.length; i++) {
             barreBurger[i].style.backgroundColor = 'white';
         }
@@ -87,9 +89,6 @@ btnTheme[i].onclick = function start() {
             iconTheme[i].style.marginLeft = "55%";
             iconTheme[i].style.backgroundImage = "url(./asset/sun1.png)";
         }
-        body[0].style.transition = '0.5s';
-        body[0].style.backgroundColor = '#181818';
-        body[0].style.color = '#fff';
         title[0].style.color = '#fff';
         for (let i = 0; i < li.length; i++) {
             li[i].style.color = 'white';
@@ -99,7 +98,7 @@ btnTheme[i].onclick = function start() {
         section2[0].style.color = 'black';
         for (let i = 0; i < boxProjet.length; i++) {
             boxProjet[i].style.backgroundColor = '#181818';
-            boxProjet[i].style.boxShadow = '0px 0px 10px #575757';
+            boxProjet[i].style.boxShadow = '0px 0px 10px rgb(57 57 57)';
         }
         for (let i = 0; i < input.length; i++) {
             input[i].style.backgroundColor = 'rgb(24 24 24 / 0%)';
@@ -109,27 +108,26 @@ btnTheme[i].onclick = function start() {
         }
         for (let i = 0; i < competence.length; i++) {
             competence[i].style.backgroundColor = '#181818';
-            competence[i].style.boxShadow = '0px 0px 10px #575757';
-        }
-        for (let i = 0; i < secs.length; i++) {
-            secs[i].style.backgroundColor = '#151515';
+            competence[i].style.boxShadow = '0px 0px 10px rgb(57 57 57)';
         }
         blokAbout[0].style.backgroundColor = '#151515';
-        blokAbout[0].style.boxShadow = '0px 0px 10px #575757';
+        blokAbout[0].style.boxShadow = '0px 0px 10px rgb(57 57 57)';
         blokAbout[0].style.color = 'white';
         for (let i = 0; i < blockHQ.length; i++) {
             blockHQ[i].style.backgroundColor = '#151515';
-            blockHQ[i].style.boxShadow = '0px 0px 10px #575757';
+            blockHQ[i].style.boxShadow = '0px 0px 10px rgb(57 57 57)';
             blockHQ[i].style.color = 'white';
         }
         form[0].style.backgroundColor = '#151515';
-        form[0].style.boxShadow = '0px 0px 10px #575757';
+        form[0].style.boxShadow = '0px 0px 10px rgb(57 57 57)';
 
         count = 1;
 
     }
     else{
 
+        body[0].style.backgroundColor = '#f0f0f0';
+        body[0].style.color = 'black';
         for (let i = 0; i < barreBurger.length; i++) {
             barreBurger[i].style.backgroundColor = 'black';
         }
@@ -137,12 +135,10 @@ btnTheme[i].onclick = function start() {
         reseau[1].src = './asset/github.png';
         reseau[2].src = './asset/twitter.png';
         fleche[0].src = './asset/fleche.png';
-        body[0].style.backgroundColor = 'white';
         for (let i = 0; i < iconTheme.length; i++) {
             iconTheme[i].style.marginLeft = "5%";
             iconTheme[i].style.backgroundImage = "url(./asset/moon2.png)";
         }
-        body[0].style.color = 'black';
         title[0].style.color = 'black';
         for (let i = 0; i < li.length; i++) {
             li[i].style.color = 'black';
@@ -160,9 +156,6 @@ btnTheme[i].onclick = function start() {
         }
         for (let i = 0; i < competence.length; i++) {
             competence[i].style.backgroundColor = 'rgba(255, 255, 255, 0)';
-        }
-        for (let i = 0; i < secs.length; i++) {
-            secs[i].style.backgroundColor = '#f9f9f9';
         }
         blokAbout[0].style.backgroundColor = 'white';
         blokAbout[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
