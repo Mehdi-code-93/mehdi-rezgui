@@ -179,6 +179,24 @@ btnTheme[i].onclick = function start() {
 
 
 
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    fillBar();
+  });
+
+  function fillBar() {
+    const barreElement = document.querySelector('.barre');
+    barreElement.classList.add('remplie');
+  }
+
+
+
+
 // window.onscroll = function() { changerCouleurNavbar() };
 
 // function changerCouleurNavbar() {

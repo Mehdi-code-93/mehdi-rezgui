@@ -7,21 +7,30 @@
     z-index: 1000;
     top: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: lo 2s ease-in-out;
+    animation: lo 3s ease-in-out;
     opacity: 0;
     }
-    .chargement{
-        background-image: url(../asset/load.gif);
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
-        height: 300px;
-        width: 300px;
+
+    .div-barre{
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 30%;
+        height: 20px;
     }
+    .barre {
+        border-radius: 20px;
+        width: 0;
+        height: 20px;
+        background-image: linear-gradient(to right, rgb(71, 196, 157), rgb(28, 197, 92));
+        transition: width 2s;
+      }
+      
+      .barre.remplie {
+        width: 100%;
+      }
 
 
     @keyframes rotate {
@@ -42,7 +51,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         font-size: 4em;
-        animation: tittle 2s ease-in-out infinite;
+        animation: tittle 3s ease-in-out infinite;
       }
 
       
@@ -1161,10 +1170,6 @@ footer{
     }
     nav{
         height: 50px;
-    }
-    .chargement{
-        height: 150px;
-        width: 150px;
     }
 
     .text-load {
