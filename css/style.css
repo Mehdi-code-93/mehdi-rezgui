@@ -1060,6 +1060,9 @@ footer{
     .myName{
         font-size: 50px;
     }
+    .boxProjet {
+        width: 65%;
+    }
 }
 @media (max-width: 1150px) {
     .ul {
@@ -1115,15 +1118,21 @@ footer{
         width: 20px;
         height: 12px;
     }
-    .boxProjet{
-        height: 220px;
-        width: 55%;
+    .boxProjet {
+        height: 200px;
+        width: 65%;
+    }
+    .imgDescProjet{
+        width: 36%;
     }
     h2{
-        font-size: 26px;
+        font-size: 15px;
     }
     .paragraphe-projet{
-        font-size: 18px;
+        font-size: 12px;
+    }
+    h6{
+        font-size: 9px;
     }
     form{
         height: 500px;
@@ -1241,23 +1250,26 @@ footer{
         height: 25px;
     }
 
-    .imgDescProjet{
-        width: 35%;
-    }
 
     form {
         height: 400px;
         width: 60%;
     }
+    .boxProjet {
+        height: 150px;
+        width: 70%;
+    }
+    .imgDescProjet{
+        width: 31%;
+    }
     h2{
-        font-size: 22px;
+        font-size: 13px;
     }
     .paragraphe-projet{
         font-size: 11px;
     }
-    .boxProjet {
-        height: 150px;
-        width: 60%;
+    h6{
+        font-size: 7px;
     }
     .title-cards-img {
         font-size: 10px;
@@ -1340,9 +1352,12 @@ footer{
         height: 40px;
     }
     h2{
-        font-size: 15px;
+        font-size: 13px;
     }
     .paragraphe-projet{
-        font-size: 10px;
+        font-size: 8px;
+    }
+    h6{
+        font-size: 6px;
     }
 }
