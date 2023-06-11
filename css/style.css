@@ -566,22 +566,30 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 80%;
 }
 .block-hq{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 20px rgb(238, 238, 238);
     border-radius: 30px;
     width: 30%;
     height: 50%;
-    padding: 40px;
 }
-.liste{
+.blok-liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     list-style: none;
     padding: 0px;
+}
+.liste{
+    margin: 5px;
 }
 
 
@@ -1208,16 +1216,32 @@ footer{
         position: relative;
         bottom: 15px;
     }
+    .sous-titre-Section{
+        font-size: 20px;
+    }
     .blokAbout {
         width: 39%;
         position: relative;
         bottom: 15px;
+    }
+    .hobbies-qualite{
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        gap: 20px;
+    }
+    .block-hq{
+        width: 100%;
+
     }
     .btnTheme {
         width: 65%;
         height: 25px;
     }
 
+    .imgDescProjet{
+        width: 35%;
+    }
 
     form {
         height: 400px;
@@ -1227,11 +1251,11 @@ footer{
         font-size: 22px;
     }
     .paragraphe-projet{
-        font-size: 14px;
+        font-size: 11px;
     }
     .boxProjet {
         height: 150px;
-        width: 75%;
+        width: 60%;
     }
     .title-cards-img {
         font-size: 10px;
@@ -1299,6 +1323,12 @@ footer{
         font-size: 14px;
         text-align: center;
     }
+    .boxProjet{
+        height: 120px;
+    }
+    /* .sous-titre-Section{
+        font-size: 0px;
+    } */
     #boutton{
         width: 50%;
         height: 40px;

@@ -22,6 +22,7 @@ let input = document.getElementsByClassName('input');
 let competence = document.getElementsByClassName('competence');
 let secs = document.getElementsByClassName('secs');
 let blokAbout = document.getElementsByClassName('blokAbout');
+let blockHQ = document.getElementsByClassName('block-hq');
 let burger = document.getElementsByClassName('burger');
 let menuBurger = document.getElementsByClassName('menu-burger');
 let headerBurger = document.getElementsByClassName('header-burger');
@@ -82,8 +83,10 @@ btnTheme[i].onclick = function start() {
         reseau[1].src = './asset/github2.png';
         reseau[2].src = './asset/twitter2.png';
         fleche[0].src = './asset/fleche2.png';
-        iconTheme[0].style.marginLeft = "55%";
-        iconTheme[0].style.backgroundImage = "url(./asset/sun1.png)";
+        for (let i = 0; i < iconTheme.length; i++) {
+            iconTheme[i].style.marginLeft = "55%";
+            iconTheme[i].style.backgroundImage = "url(./asset/sun1.png)";
+        }
         body[0].style.transition = '0.5s';
         body[0].style.backgroundColor = '#181818';
         body[0].style.color = '#fff';
@@ -114,6 +117,11 @@ btnTheme[i].onclick = function start() {
         blokAbout[0].style.backgroundColor = '#151515';
         blokAbout[0].style.boxShadow = '0px 0px 10px #575757';
         blokAbout[0].style.color = 'white';
+        for (let i = 0; i < blockHQ.length; i++) {
+            blockHQ[i].style.backgroundColor = '#151515';
+            blockHQ[i].style.boxShadow = '0px 0px 10px #575757';
+            blockHQ[i].style.color = 'white';
+        }
         form[0].style.backgroundColor = '#151515';
         form[0].style.boxShadow = '0px 0px 10px #575757';
 
@@ -130,9 +138,11 @@ btnTheme[i].onclick = function start() {
         reseau[2].src = './asset/twitter.png';
         fleche[0].src = './asset/fleche.png';
         body[0].style.backgroundColor = 'white';
-        iconTheme[0].style.backgroundImage = "url(./asset/moon2.png)";
+        for (let i = 0; i < iconTheme.length; i++) {
+            iconTheme[i].style.marginLeft = "5%";
+            iconTheme[i].style.backgroundImage = "url(./asset/moon2.png)";
+        }
         body[0].style.color = 'black';
-        iconTheme[0].style.marginLeft = "5%";
         title[0].style.color = 'black';
         for (let i = 0; i < li.length; i++) {
             li[i].style.color = 'black';
@@ -157,6 +167,11 @@ btnTheme[i].onclick = function start() {
         blokAbout[0].style.backgroundColor = 'white';
         blokAbout[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
         blokAbout[0].style.color = 'black';
+        for (let i = 0; i < blockHQ.length; i++) {
+            blockHQ[i].style.backgroundColor = 'white';
+            blockHQ[i].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
+            blockHQ[i].style.color = 'black';
+        }
         form[0].style.backgroundColor = 'white';
         form[0].style.boxShadow = '0px 0px 20px rgb(229, 229, 229)';
 
