@@ -288,7 +288,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../asset/paysage14.jpg);
+    /* background-image: -webkit-gra linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../asset/paysage14.jpg); */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6))), url(../asset/paysage14.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -674,8 +675,11 @@ main{
     padding-top: 5%;
     padding-bottom: 5%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../asset/fond1.png);
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6))), url(../asset/paysage14.jpg); */
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: bottom;
     width: 100%;
     display: flex;
@@ -1178,7 +1182,7 @@ footer{
       }
 
     
-      
+
     .burger{
         display: flex;
         flex-direction: column;
