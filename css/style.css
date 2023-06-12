@@ -105,6 +105,7 @@ header{
     height: 70px;
     position: fixed;
     transition: 500ms;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
 
@@ -1192,6 +1193,7 @@ footer{
         display: flex;
         justify-content: center;
         background-position: center;
+        background-attachment: fixed;
     }
     .Accueil-et-myPhoto {
         height: 100%;
