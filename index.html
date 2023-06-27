@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="asset/myPhoto.png">
     <title>MehdiFolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div id="loading-overlay">
@@ -78,7 +79,7 @@
                         <a href="https://github.com/Mehdi-code-93" target="_blank"><img class="reseau" src="./asset/github.png" alt="github"></a>
                         <a href="https://twitter.com/home?lang=fr" target="_blank"><img class="reseau" src="./asset/twitter.png" alt="twitter"></a>                  
                     </div>
-                    <a id="boutton" class="animeTxt-1" href="./asset/CV-Epitech-Mehdi.pdf" download="CV-Epitech-Mehdi.pdf" target="_blank">Télécharger CV</a>
+                    <a id="boutton" class="animeTxt-1" href="./asset/CV_Mehdi.pdf" download="CV_Mehdi.pdf" target="_blank">Télécharger CV</a>
                     <!-- <button id="boutton" class="animeTxt-1">Download CV</button> -->
                     <div class="blokFleche">
                         <a class="blokFleche" href="#sec2" id=""><img class="fleche" src="./asset/fleche.png" alt=""></a>
@@ -98,6 +99,8 @@
             <div class="blokAbout reveal">
                 <h2 class="about-title">A propos de moi</h2>
                 <div>
+                    <h5 class="status-emploi">Adresse : 7 avenue walwein</h5>
+                    <h5 class="status-emploi">tel : 06 77 82 35 23</h5>
                     <h6 class="status-emploi">Recherche d'alternance en développement web, rythme : 3s entreprise / 1s semaine école</h6>
                     <p class="desc-about">Hey, moi c'est Mehdi Rezgui, je suis Développeur Web actuellement en recherche d'une alternance pour septembre 2023.</p>
                     <p class="desc-about">Passionné par l'informatique, et plus particulièrement par le développement web, j'ai décidé de suivre une formation de développeur web en alternance chez Epitech.</p>
@@ -128,7 +131,13 @@
                     <ul class="blok-liste">
                         <li class="liste"><span><h6>2022 / 2024</h6></span>Epitech ( web@cademie )</li>
                         <li class="liste"><span><h6>Aoout 2022</h6></span>Ecole 42 ( piscine C )</li>
-                        <li class="liste"><span><h6>2021 / 2022</h6></span>Doranco</li>
+                    </ul>
+                </div>
+                <div class="block-hq reveal">
+                    <h2 class="about-title">Expérience</h2>
+                    <ul class="blok-liste">
+                        <li class="liste"><span><h6>2020 / 2021</h6></span>ascensoriste ( NSA )</li>
+                        <li class="liste"><span><h6>2019 2020</h6></span>amployé ( Pokawa )</li>
                     </ul>
                 </div>
             </div>
@@ -192,7 +201,7 @@
 
                 <div class="boxProjet reveal-left">
                     <div class="imgDescProjet cards-decale-1">
-                        <img class="imgProject" src="./asset/project3.png" alt="">
+                        <img class="imgProject" src="./asset/project5.png" alt="">
                         <div class="miniDescProjet">
                             <img class="view-Projet" src="./asset/eyes1.png" alt="">
                         </div>
@@ -203,10 +212,10 @@
                     </div>
 
                     <div class="descProjet">
-                        <h6>19 Mars 2023</h6>
-                        <h2>Puissance 4</h2>
-                        <p class="paragraphe-projet">Création d'un jeu type puissance 4 avec pour objectif ( Lancer une partie / ajouter des pions tour par tour / vérifier si une personne gagne / ajout d'une animation sonore)</p>
-                        <h6>Javascript, Jquery, HTML, CSS</h6>
+                        <h6>14 Avril 2023</h6>
+                        <h2>My_Spotify</h2>
+                        <p class="paragraphe-projet">Création d'une application type Spotify avec pour objectif ( Ecouter de la musique / ajouter de la musique / liker des artiste / s'abonner aux artistes )</p>
+                        <h6>React.JS, Docker</h6>
                     </div>
                 </div>
 
@@ -230,6 +239,31 @@
                             <h2 class="title-cards-img">Clique ici !</h2>
                         </div>
 
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="boxProjet reveal-left">
+                    <div class="imgDescProjet cards-decale-1">
+                        <img class="imgProject" src="./asset/project3.png" alt="">
+                        <div class="miniDescProjet">
+                            <img class="view-Projet" src="./asset/eyes1.png" alt="">
+                        </div>
+                        <div class="miniDescProjet2">
+                            <h2 class="title-cards-img">Clique ici !</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="descProjet">
+                        <h6>19 Mars 2023</h6>
+                        <h2>Puissance 4</h2>
+                        <p class="paragraphe-projet">Création d'un jeu type puissance 4 avec pour objectif ( Lancer une partie / ajouter des pions tour par tour / vérifier si une personne gagne / ajout d'une animation sonore)</p>
+                        <h6>Javascript, Jquery, HTML, CSS</h6>
                     </div>
                 </div>
                 
@@ -307,17 +341,109 @@
             <div class="boxtitleProjet">
                 <h1 class="titleSection">Contact</h1>
             </div>
-            <form action="" method="get">
+            <!-- <form action="" method="get"> -->
+            <div class="form">
                 <h3>Contactez moi</h3>
                 <div class="div-formulaire">
-                    <input class="input" type="text" placeholder="Prenom...">
-                    <input class="input" type="text" placeholder="Email...">
-                    <input class="input" type="text" placeholder="Objet...">
-                    <input class="input" type="textarea" placeholder="Message...">
+                    <input class="input" name="firstname" id="firstname" type="text" placeholder="Prenom...">
+                    <input class="input" name="email" id="email" type="text" placeholder="Email...">
+                    <input class="input" name="objet" id="objet" type="text" placeholder="Objet...">
+                    <input class="input" name="message" id="message" type="textarea" placeholder="Message...">
                 </div>
-                <input type="submit" id="boutton" class="animeTxt-1 btn-submit">
-            </form>
+                <button onclick="sendEmail()" class="animeTxt-1 btn-submit">Envoyer</button>
+            <!-- </form> -->
         </div>
+        </div>
+
+
+
+
+
+<!-- 
+        <div class="footerContainer">
+
+            <div class="footerBoxForm">
+
+                <div class="form">
+
+                    <div class="footerTitle">
+                        <h1>Contactez-moi</h1>
+                        <p>Travaillons ensemble !</p>
+                    </div>
+
+                    <div class="footerInput">
+
+                        <div class="test">
+
+                            <div class="input inputleft">
+                                <label for="firstname">Prénom <span>*</span></label>
+    
+                                <div class="inputTest">
+                                    <i class="fa-regular fa-user footerIcon"></i>
+                                    <input type="text" name="firstname" id="firstname">
+                                </div>
+                            </div>
+    
+                            <div class="input">
+                                <label for="lastname">Nom <span>*</span></label>
+    
+                                <div class="inputTest">
+                                    <i class="fa-regular fa-user footerIcon"></i>
+                                    <input type="text" name="lastname" id="lastname">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="test2">
+
+                            <div class="input inputleft">
+                                <label for="email">E-mail <span>*</span></label>
+    
+                                <div class="inputTest">
+                                    <i class="fa-regular fa-user footerIcon"></i>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                            </div>
+
+                            <div class="input">
+                                <label for="phone">Tél</label>
+    
+                                <div class="inputTest">
+                                    <i class="fa-solid fa-mobile-screen footerIcon"></i>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="input inputmessage">
+                            <label for="message">Message <span>*</span></label>
+
+                            <div class="inputTest message">
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <button onclick="sendEmail()">Envoyer</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+
+
+
+
+
+
+
     </main>
 
 
@@ -330,5 +456,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/email.js"></script>
 </body>
 </html>

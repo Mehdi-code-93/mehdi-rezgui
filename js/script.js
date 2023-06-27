@@ -1,7 +1,7 @@
 let body = document.getElementsByTagName('body');
 let nav = document.getElementsByTagName('nav');
 // let header = document.getElementsByTagName('header');
-let form = document.getElementsByTagName('form');
+let form = document.getElementsByClassName('form');
 let btnTheme = document.getElementsByClassName('btnTheme');
 let iconTheme = document.getElementsByClassName('iconTheme');
 let title = document.getElementsByClassName('title');
@@ -75,7 +75,7 @@ btnTheme[i].onclick = function start() {
     
     if (count == 0) {
 
-        body[0].style.transition = '0.5s';
+        body[0].style.transition = '0.2s';
         body[0].style.backgroundColor = 'rgb(32 32 35)';
         body[0].style.color = '#fff';
         for (let i = 0; i < barreBurger.length; i++) {
@@ -174,6 +174,12 @@ btnTheme[i].onclick = function start() {
     }
 }
 }
+
+
+
+
+
+
 
 
 
@@ -320,3 +326,22 @@ var lo = document.getElementById('loading-overlay');
         });
     }
     loadingOverlay();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

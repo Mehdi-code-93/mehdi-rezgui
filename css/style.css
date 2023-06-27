@@ -577,7 +577,7 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 88%;
 }
 .block-hq{
     display: flex;
@@ -587,8 +587,8 @@ main{
     background-color: white;
     box-shadow: 0px 0px 20px rgb(238, 238, 238);
     border-radius: 30px;
-    width: 30%;
-    height: 50%;
+    width: 20%;
+    height: 200px;
 }
 .blok-liste{
     display: flex;
@@ -984,7 +984,7 @@ h6{
 
 
 
-form{
+.form{
     background-color: white;
     margin: 5%;
     display: flex;
@@ -1011,10 +1011,28 @@ input{
     border-bottom: 1px solid black;
 }
 .btn-submit{
-    cursor: pointer;
-    height: 10%;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 5%;
+    border: none;
+    background-color: #83bb9d;
+    border-radius: 5px;
+    color: #000000;
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+    box-shadow: 4px 4px 0px #000000;
+    transition: 0s;
 }
+.btn-submit:hover{
+    transform: scale(1.02);
+    box-shadow: none;
+}
+
+
+
 
 
 
@@ -1040,7 +1058,11 @@ footer{
 
 
 
-/* ============== footer ============== */
+
+
+
+
+/* ============== media query ============== */
 @media (max-width: 1800px) {
 
     .competence{
@@ -1148,7 +1170,7 @@ footer{
     h6{
         font-size: 9px;
     }
-    form{
+    .form{
         height: 500px;
         width: 40%;
     }
@@ -1158,6 +1180,14 @@ footer{
     .competence{
         width: 150px;
         height: 150px;
+    }
+    .about-title {
+        text-align: center;
+        font-size: 18px;
+    }
+    .liste {
+        margin: 5px;
+        font-size: 14px;
     }
 }
 
@@ -1263,7 +1293,7 @@ footer{
     }
 
 
-    form {
+    .form {
         height: 400px;
         width: 60%;
     }
@@ -1332,6 +1362,7 @@ footer{
 
 
 @media (max-width: 500px) {
+
     .myName{
         font-size: 20px;
     }
@@ -1377,5 +1408,10 @@ footer{
     #boutton{
         width: 50%;
         height: 40px;
+    }
+    .btn-submit{
+        width: 40%;
+        height: 8%;
+        font-size: 15px;
     }
 }
